@@ -1,0 +1,22 @@
+# AI-Based Water Quality Prediction and Contamination Risk Classification
+# using IoT Sensor Data  --  College Project
+#
+# Install with:  pip install -r requirements.txt
+# (Python 3.12 recommended)
+
+# --- Core scientific stack ---
+numpy==2.5.3
+pandas==3.0.6
+scipy==1.18.1
+
+# --- Machine learning ---
+scikit-learn==1.9.1
+joblib==1.6.0
+
+# --- Dashboard / visualisation ---
+streamlit==1.64.0
+plotly==7.1.0
+
+# --- Supporting (installed automatically by Streamlit) ---
+altair==6.3.0
+pydeck==0.9.3
