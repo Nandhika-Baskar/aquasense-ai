@@ -103,7 +103,7 @@ def render(ctx: AppContext) -> None:
             readings[feature] = float(value)
 
         st.markdown("<div style='height:.4rem'></div>", unsafe_allow_html=True)
-        submitted = st.form_submit_button("Run AI Analysis", type="primary")
+        submitted = st.form_submit_button("Predict Water Quality", type="primary")
 
     if submitted:
         errors, warnings = validate(readings)

@@ -78,14 +78,14 @@ def main() -> int:
 
     submitted = False
     for button in at.button:
-        if button.label == "Run AI Analysis":
+        if button.label == "Predict Water Quality":
             button.click().run()
             submitted = True
             break
 
     if not submitted:
-        failures.append("'Run AI Analysis' button not found")
-        print("  [FAIL] 'Run AI Analysis' button not found")
+        failures.append("'Predict Water Quality' button not found")
+        print("  [FAIL] 'Predict Water Quality' button not found")
     elif at.exception:
         failures.append(f"prediction submit raised: {at.exception[0].value}")
         print(f"  [FAIL] submitting the form -- {at.exception[0].value[:90]}")
